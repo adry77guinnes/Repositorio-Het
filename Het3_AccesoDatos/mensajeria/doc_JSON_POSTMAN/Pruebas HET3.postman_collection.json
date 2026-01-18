@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "2832b313-db18-42fa-9645-e08528373878",
+    "name": "Pruebas HET3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45528633",
+    "_collection_link": "https://go.postman.co/collection/45528633-2832b313-db18-42fa-9645-e08528373878?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Prueba_Get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/envios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "envios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prueba_Post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"solicitante\": {\r\n    \"dni\": \"87654321B\",\r\n    \"nombre\": \"Ana López\",\r\n    \"telefono\": \"699888777\"\r\n  },\r\n  \"origen\": {\r\n    \"direccion\": \"Calle Sol 5\",\r\n    \"ciudad\": \"Salamanca\",\r\n    \"personaContacto\": \"Luis\",\r\n    \"telefono\": \"611111111\"\r\n  },\r\n  \"destino\": {\r\n    \"direccion\": \"Avenida Europa 12\",\r\n    \"ciudad\": \"Barcelona\",\r\n    \"personaContacto\": \"Marta\",\r\n    \"telefono\": \"622222222\"\r\n  },\r\n  \"mercancia\": {\r\n    \"tipo\": \"Ropa\",\r\n    \"peso\": 3,\r\n    \"numeroBultos\": 2,\r\n    \"anchura\": 40,\r\n    \"longitud\": 50,\r\n    \"altura\": 30\r\n  },\r\n  \"fechaCreacion\": \"2026-01-17\",\r\n  \"codigoCliente\": \"CL-456\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/envios",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "envios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prueba_Put",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"direccion\": \"Nueva calle 99\",\r\n  \"ciudad\": \"Sevilla\",\r\n  \"personaContacto\": \"Carlos\",\r\n  \"telefono\": \"633333333\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/envios/FEUR-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "envios",
+            "FEUR-1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prueba_Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"direccion\": \"Nueva calle 99\",\r\n  \"ciudad\": \"Sevilla\",\r\n  \"personaContacto\": \"Carlos\",\r\n  \"telefono\": \"633333333\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/envios/FEUR-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "envios",
+            "FEUR-1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
